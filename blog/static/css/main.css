@@ -1,3 +1,4 @@
+
 [class*="fontawesome-"]:before {
     font-family: 'FontAwesome', sans-serif;
   }
@@ -11,11 +12,29 @@
   body {
       font-family: 'Open Sans', sans-serif;
   }
+  #map{
+      width: 45%;
+      border: solid black 2px;
+  }
+  #butmap{
+      background: rgba(0,0,0,0.7);
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+      border: solid black 2px;
+      width: 33.33%;
+      margin-left: 33.33%;
+      margin-right: 33.33%;
+      
+  }
+  #butmap:hover{
+      background: rgb(141, 132, 132);
+  }
   
   header {
       /* mi tamaño estandar de header */
       width: 100%;
-      background: #5c3c10;
+      background: #3751c7;
       color: #fff;
       height: 13%;
       /* menu estatico */
@@ -23,6 +42,7 @@
       top: 0;
       left: 0;
       z-index: 100;
+      border-bottom: black solid 1px;
   
       
   }
@@ -62,11 +82,13 @@
       width: 100%;
       margin-bottom: 25px;
   }
-  
-  #Bienvenidos {
-      text-justify: distribute;
+  #Bienvenidos h2 {
       text-align: center;
-      background-color: #a27a2fef;
+  }
+  #Bienvenidos {
+      font-size: 18px;
+      text-align: justify;
+      background-color:#3751c7;
       color: #f7ca44;
       text-shadow: rgb(0, 0, 0) 1cm;
       border: solid;
@@ -79,7 +101,8 @@
   
   footer{
       background-color: #fff;
-      
+      font-size: 18px;
+      margin-top: 30px;
   }
   footer a {
       color: black;
@@ -115,7 +138,7 @@
       color: blue;
   }
   .icon-list:hover{
-      color: bisque;
+      color: rgb(151, 151, 150);
   }
   
   @media (min-width:768px) { 
@@ -141,14 +164,7 @@
       }
   }
   
-  main{
-      background-image: url(https://media.istockphoto.com/vectors/dog-isolated-french-bulldog-seamless-pattern-bone-paw-vector-breed-vector-id915559600);
-      margin: 0;
-      background-size: 100vw;
-      background-attachment: fixed;
-      
-      
-  }
+  
   
   
   

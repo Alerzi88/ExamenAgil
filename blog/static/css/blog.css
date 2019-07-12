@@ -1,6 +1,7 @@
 
+
 #blog{
-    background-color: #a27a2fef;
+    background-color: #3751c7;
     border: solid black 3px;
     
     
@@ -34,7 +35,7 @@
     width: 100%;
     height: 80%;
     max-width: 280px;
-    border: double rgba(255, 255, 255, 0.383);
+    border: double white 2px;
     border-radius: 10%;
 }
 #blog article:hover{

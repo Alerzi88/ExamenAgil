@@ -74,8 +74,11 @@
     color: white;
     padding: 10px 20px;
     cursor: pointer;
-    border: none;
+    border: solid 2px black;
     
+}
+.formulario__submit:hover {
+    background: rgb(141, 132, 132);
 }
 
 
@@ -97,4 +100,4 @@
     margin-top: 20%;
     }
        }
-  
+    
