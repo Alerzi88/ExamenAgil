@@ -1,22 +1,194 @@
-<html>
-    <head>
-        <title>Django Girls blog</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Aqui van los Metadatos (Datos que no se muestran en Pantalla)-->
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Pagina buenisima">
+    <title>HOLI</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="icon" href="{% static 'img/icon.jpg' %}"/>
+    <link rel="stylesheet" href="{% static 'css/fontello.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" href="{% static 'css/banner.css' %}">
+    <link rel="stylesheet" href="{% static 'css/carrusel.css' %}">
+    <link rel="stylesheet" href="{% static 'css/info.css' %}">
+    <link rel="stylesheet" href="{% static 'css/formulario.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome|typicons"> 
+</head>
+<body>
+    <header>
+        
+        <div class="contenedor">
+            <article class="titulo"><a href="post_list.html"><h1> Secu City 
+            </h1></a></article>
+            <input type="checkbox" id="menu-bar"> 
+            <label class="icon-list" for="menu-bar"> </label>
+            <nav class="menu">
+                <a href="post_list.html">Inicio</a>
+                <a href="formulario.html">Inscripción</a>
+                <a href="http://www.municipalidadmaipu.cl/informacion-de-contacto/">Contacto Maipu</a>
+            </nav>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </div>
+            
+    </header>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
+    <main>
+        <section id="banner">
+            <div class="contenedor">
+            <div class="container">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                      </ol>
+                  
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        
+                            <div class="item active" >
+                                <a href="http://www.municipalidadmaipu.cl/">
+                            <img src="{% static 'img/cat.png' %}" alt="Perro reubicado numero 1">
+                                </a>
+                            </div>
+                
+                        
+                            <div class="item">
+                                    <a href="http://www.municipalidadmaipu.cl/">
+                            <img src="{% static 'img/cat1.jpg' %}" alt="Perro reubicado numero 2">
+                                    </a>
+                            </div>
+                        
+                        
+                        <div class="item">
+                                <a href="http://www.municipalidadmaipu.cl/">
+                          <img src="{% static 'img/cat2.jpg' %}" alt="Perro reubicado numero 3">
+                                </a>
+                        </div>
+                        
+                        
+                        <div class="item">
+                                <a href="http://www.municipalidadmaipu.cl/">
+                            <img src="{% static 'img/cat3.jpg' %}" alt="Perro reubicado numero 3">
+                                </a>
+                        </div>
+                        
+                        <div class="item">
+                                <a href="http://www.municipalidadmaipu.cl/">
+                            <img src="{% static 'img/cat4.jpg' %}" alt="Perro reubicado numero 3">
+                                </a>
+                        </div>
+                        
+                    
+                      </div>
+                  
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                  
+        </section>
+
+        <section id="Bienvenidos">
+            <div class="contenedor">
+                    <h2>Fundación Secu City</h2>
+                    <p>El proyecto consta de implementar una aplicación llamada SecuCity la cual está enfocada como bien dice el nombre a la seguridad ciudadana, en este caso, de la comuna de Maipú.
+                        El aprovechar la tecnología es algo que se está implementando desde hace muchos años, pero a la vez no se está aprovechando al 100%, con lo cual nosotros como compañía aportamos nuestro grano de arroz en el ámbito de la seguridad, pero ¿cómo?
+                        La funcionalidad de la aplicación está orientada a un mapa por vía GPS con la cual se pueden enviar alertas de zonas en las cuales se están causando conflictos o bien es más peligrosa o se detectan actividades sospechosas, preguntas frecuentes son ¿Qué pasa si se detectan alertas falsas?, ¿De qué sirve poner una alerta?, bueno esto más que nada está cubierto por tu propio criterio porque se sabrá exactamente quién y donde mando esa alerta ya que solo está habilitada para gente que trabaje o directamente viva en la comuna y ¿para qué sirve?, esa alerta que tu mandas será recibida por la seguridad ciudadana más cercana a ti y a la vez también por carabineros quienes rodearan o investigaran dicha zona.
+                        Lo original totalmente que tendrá la app es que la publicidad la cual dará ganancias a la app será única y exclusivamente de la comuna en la que se implemente, con lo cual las personas podrán informarse de beneficios y posibles eventos que se organicen para que así se aprovechen al máximo.
+                        </p>
+            </div>
+            
+        </section>
+        
+        <section id="blog">
+                <div class="titulo_blog"><h2>Mantente informado con lo último</h2></div>
+            <div class="contenedor">
+                <article>
+                    <img src="{% static 'img/img1.jpg' %}" alt="Eventos">
+                    <h4>Eventos</h4>
+                </article>
+                <article>
+                    <img src="{% static 'img/img2.jpg' %}" alt="Talleres">
+                    <h4>Talleres</h4>
+                    
+                </article>
+                <article>
+                    <img src="{% static 'img/img3.jpg' %}" alt="Beneficios">
+                    <h4>Beneficios</h4>
+                </article>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+
+        <div class="contenedor">
+            <table> 
+                    
+                <article class="sociales">
+                
+
+                <a class="icon-facebook-squared"href="https://www.facebook.com/"></a>
+                <a class="icon-twitter-1" href="https://twitter.com/?lang=es"></a>
+                <a class="icon-instagram" href="https://www.instagram.com/?hl=es-la"></a>
+                <a class="icon-googleplus-rect" href="https://plus.google.com/discover?hl=es"></a>
+                    
+                </article>
+            
+                <div>
+                        <tr>
+                            <td>Teléfono Contacto:</td>
+                             <td>
+            
+                                <!-- Hipervínculo con llamada -->
+                                <a href="tel:+56988888888">
+                                    +56 9 8 888 88 88
+                                </a>
+            
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <td>Mail:</td>
+                            <td>
+            
+                                <a href="mailto:Alexis@alumnos.duoc.cl">
+                                    Alexis@alumnos.duoc.cl
+                                </a>
+            
+                            </td>
+                        </tr>
+                </div>
+                <p class="copy">Secu City &copy; 2019</p>
+                
+            </table>
+        
+            
+               
         </div>
-    </body>
+           
+    </footer>
+</body>    
 </html>
