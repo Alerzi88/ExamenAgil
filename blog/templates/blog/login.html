@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="{% static 'style/login.css' %}">
+      
+  </head>
+  <body>
+      <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '270981257106999',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'V3.3'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+    <div class="login-box">
+      <img src="{% static 'img/icon.jpg' %}" class="avatar" alt="Avatar Image">
+      <h1>Inicia Sesion</h1>
+      <form>
+        <!-- USERNAME INPUT -->
+        <label for="username">nombre de usuario</label>
+        <input type="text" placeholder="Introduce tu nombre de usuario aqui">
+        <!-- PASSWORD INPUT -->
+        <label for="password">contraseña</label>
+        <input type="password" placeholder="introduce tu contraseña aqui">
+        <input type="submit" value="Iniciar Sesion" action="index.html">
+    
+          
+          <a href="www.faceebook.cl"><img src="{% static 'img/fb-login.png' %}" width="190px" alt="fb"
+          scope="public_profile,email"
+          onlogin="checkLoginState();"></a>
+          
+
+          <br>
+        <a href="post_list.html">volver al inicio</a><br>
+        
+      </form>
+    </div>
+  </body>
+</html>
